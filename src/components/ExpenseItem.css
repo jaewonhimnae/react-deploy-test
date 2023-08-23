@@ -1,0 +1,48 @@
+.item {
+    background-color: var(--mainWhite);
+    border: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    transition: all 0.3s linear;
+}
+
+.item:hover {
+    width: 100%;
+    transform: scale(1.02);
+}
+
+.info {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expense {
+    margin-right: 2rem;
+}
+
+.amount {
+    font-weight: 300;
+    font-size: 1rem;
+    border-radius: 2px;
+    padding: 1px 3px;
+}
+
+.clear-btn,
+.edit-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.clear-btn {
+    color: var(--mainRed);
+}
+
+.edit-btn {
+    color: var(--mainGreen);
+}

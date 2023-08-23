@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primaryColor: #90A959;
+  --secondColor: #E9B872;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainRed: #c45151;
+  --mainGreen: #4caf50;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--secondColor);
+  color: var(--mainBlack);
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  outline: 0;
+  border: none;
+  border-radius: 2px;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+}
+
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.btn-icon {
+  margin-left: 0.75rem;
+  font-size: 1.2rem;
 }
